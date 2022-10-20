@@ -12,6 +12,20 @@ public class BoloRetangular {
     float peso;
     String sabor;
     String cobertura;
+
+    //Construtor
+        BoloRetangular() {
+    }
+    BoloRetangular(float peso, String sabor, String cobertura) {
+        this.peso = peso;
+        this.cobertura = cobertura;
+        this.sabor = sabor;
+    }
+    
+    BoloRetangular(float peso, String sabor){
+        this.peso = peso;
+        this.sabor = sabor;
+    }
     
     public void decorar(){
         System.out.println("Bolo decorado.");

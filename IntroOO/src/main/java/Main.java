@@ -28,6 +28,9 @@ public class Main {
         meuBolo.comer(1);
         
         imprimirBolo(boloDeMorango);
+        
+        BoloRetangular boloDeChocolate = new BoloRetangular(3,"Chocolate","Caramelo");
+        imprimirBolo(boloDeChocolate);
 
     }
     
