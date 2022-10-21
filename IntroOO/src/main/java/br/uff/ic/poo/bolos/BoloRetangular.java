@@ -61,12 +61,12 @@ public class BoloRetangular {
         System.out.println("Bolo decorado.");
     }
     public void comer(float pesoComido){
-        setPeso(peso - pesoComido);
         if (peso - pesoComido > 0){
             System.out.println("Comi " + pesoComido + " Kg de bolo");
         }else{
             System.out.println("Não tem " + pesoComido + " de bolo para comer.");
         }
+        setPeso(peso - pesoComido);
     }
     
 }
