@@ -15,6 +15,8 @@ public class BoloRetangular {
     private String sabor;
     private String cobertura;
     private static int numBolos = 0;
+    public static final int TEMPO_FORNO = 20;
+    
 
     //Construtor
     public BoloRetangular() {
