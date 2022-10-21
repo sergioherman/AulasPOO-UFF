@@ -41,7 +41,7 @@ public class Main {
         imprimirBolo(boloDeChocolate);
         boloDeChocolate.comer(1);
         imprimirBolo(boloDeChocolate);
-
+        System.out.println("Quantos Bolos: " + BoloRetangular.getNumBolos());
     }
     
     static void imprimirBolo(BoloRetangular boloParaImprimir){

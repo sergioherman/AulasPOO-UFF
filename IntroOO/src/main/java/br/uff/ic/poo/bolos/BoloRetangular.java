@@ -14,19 +14,23 @@ public class BoloRetangular {
     public float peso;
     private String sabor;
     private String cobertura;
+    private static int numBolos = 0;
 
     //Construtor
     public BoloRetangular() {
+        numBolos++;
     }
     public BoloRetangular(float peso, String sabor, String cobertura) {
         this.peso = peso;
         this.cobertura = cobertura;
         this.sabor = sabor;
+        numBolos++;
     }
     
     public BoloRetangular(float peso, String sabor){
         this.peso = peso;
         this.sabor = sabor;
+        numBolos++;
     }
     
     public float getPeso(){
@@ -39,6 +43,10 @@ public class BoloRetangular {
     
     public String getCobertura(){
         return this.cobertura;
+    }
+    
+    public static int getNumBolos(){
+        return numBolos;
     }
     
     public void setPeso(float peso){
