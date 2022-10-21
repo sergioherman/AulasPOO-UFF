@@ -20,9 +20,17 @@ public class Animal {
     public void fazerRuido(){
         System.out.println("Animal fez ruido.");
     }
+    
+    public void comer(){
+        System.out.println("Animal comeu.");
+    }
     public void comer(String comida){
         System.out.println("Animal comeu " + comida + ".");
     }
+    public void comer(String comida, int qtde){
+        System.out.println("Animal comeu " + qtde + " unidades de " + comida + ".");
+    }
+    
     public void dormir(){
         System.out.println("Animal dormiu.");
     }

@@ -30,6 +30,10 @@ public class Main {
             animalDaLista.circular();
             animalDaLista.comer("carne");
         }
+        
+        animal.comer();
+        animal.comer("ração");
+        animal.comer("ração", 5);
     }
     
     
