@@ -32,6 +32,5 @@ public class Cachorro extends Animal implements Domesticavel{
     public void bricar() {
         System.out.println("Cachorro está brincando");
     }
-    
-    
+        
 }
