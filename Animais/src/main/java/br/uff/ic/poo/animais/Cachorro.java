@@ -8,7 +8,7 @@ package br.uff.ic.poo.animais;
  *
  * @author sergio
  */
-public class Cachorro extends Animal{
+public class Cachorro extends Animal implements Domesticavel{
     
     @Override
     public void fazerRuido(){
@@ -22,5 +22,16 @@ public class Cachorro extends Animal{
     public Cachorro(){
         especie = "Cachorro";
     }
+    
+    @Override
+    public void serAmigavel(){
+        System.out.println("Cachorro quer carinho");
+    }
+
+    @Override
+    public void bricar() {
+        System.out.println("Cachorro está brincando");
+    }
+    
     
 }

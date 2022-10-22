@@ -8,18 +8,17 @@ package br.uff.ic.poo.animais;
  *
  * @author sergio
  */
-public class Animal {
+public abstract class Animal {
     protected String especie;
-    
     protected String imagem;
-    protected String comida;
+    public String comida;
     protected int nivelDeFome;
     protected int localizacaoX;
     protected int localizacaoY;
     
-    public void fazerRuido(){
-        System.out.println("Animal fez ruido.");
-    }
+    public abstract void fazerRuido();/*{
+       System.out.println("Animal fez ruido.");
+    }*/
     
     public void comer(){
         System.out.println("Animal comeu.");
@@ -39,5 +38,18 @@ public class Animal {
     }
     public String getEspecie(){
         return this.especie;
+    }
+    
+    public Animal(String especie, String imagem, String comida, int nivelDeFome, int localizacaoX, int localizacaoY){
+        this.imagem = imagem;
+        this.comida = comida;
+        this.nivelDeFome = nivelDeFome;
+        this.localizacaoX = localizacaoX;
+        this.localizacaoY = localizacaoY;
+        this.especie = especie;
+        
+    }
+    public Animal(){
+        this("especie do animal não definida","url da imagem do animal nao definida","comida do animal nao definida",0,0,0);
     }
 }

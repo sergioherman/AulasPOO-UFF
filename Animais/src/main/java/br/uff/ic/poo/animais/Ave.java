@@ -11,6 +11,11 @@ package br.uff.ic.poo.animais;
 public class Ave extends Animal {
     
     @Override
+    public void fazerRuido(){
+        System.out.println("Animal fez ruido");
+    }
+    
+    @Override
     public void circular(){
         System.out.println("Ave voando");
     }
