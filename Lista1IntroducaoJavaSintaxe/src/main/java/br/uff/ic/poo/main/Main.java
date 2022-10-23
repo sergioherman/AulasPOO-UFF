@@ -18,6 +18,7 @@ public class Main {
         Ex5 ex5 = new Ex5();
         Ex6 ex6 = new Ex6();
         Ex7 ex7 = new Ex7();
+        Ex8 ex8 = new Ex8();
         
         //ex1.exercicio1();
         //ex2.exercicio2();
@@ -25,7 +26,8 @@ public class Main {
         //ex4.exercicio4();
         //ex5.exercicio5();
         //ex6.exercicio6();
-        ex7.exercicio7();
+        //ex7.exercicio7();
+        ex8.exercicio8();
         
     }
 }
