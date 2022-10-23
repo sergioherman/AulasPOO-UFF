@@ -43,6 +43,7 @@ public class Ex8 {
         System.out.println("\nVerificação de matriz: \n");
         //Verificação dar linhas;
         boolean continua = true;
+        boolean magica = true;
         int soma1 = 0;
         
         for (int j = 0; j < tam; j++){
@@ -58,6 +59,7 @@ public class Ex8 {
             }
             if (soma2 != soma1){
                 continua = false;
+                magica = false;
                 break;
             }
         }
@@ -69,6 +71,7 @@ public class Ex8 {
         }
         
         //Verifica colunas
+        continua = true;
         for (int i = 0; i < tam; i++){
             soma2 = 0;
             for (int j = 0; j < tam; j++){
@@ -76,6 +79,7 @@ public class Ex8 {
             }
             if (soma2 != soma1){
                 continua = false;
+                magica = false;
                 break;
             }
         }
@@ -86,6 +90,7 @@ public class Ex8 {
             System.out.println("Não passou no teste de colunas");
         }
         
+        //teste de diagonal
         
         
     }
