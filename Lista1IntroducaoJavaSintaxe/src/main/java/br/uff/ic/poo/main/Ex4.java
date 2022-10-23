@@ -8,15 +8,14 @@ package br.uff.ic.poo.main;
  *
  * @author sergio
  */
-public class Ex3 {
+public class Ex4 {
     
-    public void exercicio3(){
-        System.out.println("Exercício 3:");
-        int soma = 0;
-        for (int i = 1; i < 1000; i++){
-            soma += i;
+    public void exercicio4(){
+        System.out.println("Exercício 4:");
+        int valor = 3;
+        while (valor <= 100){
+            System.out.print(valor + " ");
+            valor += 3;
         }
-        System.out.println("Soma: " + soma);
     }
-    
 }

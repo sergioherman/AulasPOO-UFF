@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Ex1 {
     
     public void exercicio1(){
+        System.out.println("Exercício 1:");
 
         int n = 0;
         int qtdeNeg = 0;

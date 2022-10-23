@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Ex2 {
     
     public void exercicio2(){
+        System.out.println("Exercício 2:");
         int R;
         int S;
         int T;
