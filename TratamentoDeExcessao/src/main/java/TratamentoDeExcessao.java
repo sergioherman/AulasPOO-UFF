@@ -1,3 +1,6 @@
+
+import java.io.IOException;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
@@ -61,6 +64,9 @@ public class TratamentoDeExcessao {
         }
         
         
+        
+        
+        
     }
     
     public static int metodoInteiro(){
@@ -92,6 +98,22 @@ public class TratamentoDeExcessao {
             System.out.println("Executado mesmo após o return do metodo");
             System.out.println("\n\n");
         }
+    }
+    
+    
+    //Propagação de tratamento de excessão com throws
+    public void metodoA(){
+        try{
+            this.metodoLancaExcessao();
+        } catch (IOException ee){
+            System.out.println("Tratar excessão.");
+        }
+        
+    }
+    
+    //public void metodoLancaExcessao() throws ArithmeticException{
+    public void metodoLancaExcessao() throws IOException{
+        
     }
     
 }
